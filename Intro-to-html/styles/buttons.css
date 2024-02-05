@@ -1,0 +1,80 @@
+.subscribe-button{ /*Class is created using .subscribe button*/
+    background-color: rgb(200, 0, 0);/*CSS property for subscribe button*/
+    color:white;/*CSS value*/
+    border: none;
+    /*Padding is better alternative for height and weisght, we can add and delete text inside button, eg: subscribe to sub button, we can do it using this */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-left: 20px;
+    /*opacity changes smoothly from out to in environment :for 0.15 second (range:0 to 1)*/
+    transition:opacity 0.15s; 
+    /*browser tries to align the button based on text. Override this behavior to set the all button into one line*/
+    vertical-align: top;
+}
+
+.subscribe-button:hover{/*PseudoClass: hover: when the mouse points that it will activate.*/
+    opacity: 0.8/*fade out the element: how see through the HTML element is - ranges from 0 to 1*/
+    
+}
+.subscribe-button:active{/*Pseudoclass :Active: When we click, then it will active*/
+    opacity:0.5
+}
+.join-button{
+    background-color: white;
+    border-color: rgb(42, 42, 204);
+    border-style:solid;
+    border-width:1px;
+    color : rgb(42, 42, 204);  /*this line is for text color */
+    /*height: 35px;*/ /* if we use margin-right and left property we do not have to use ht and wt, sometimes it does not adjust for the content we typed in, delete these 2 lines for that*/
+    /*width:100px;*/
+    /*Padding is better alternative for height and weisght, we can add and delete text inside button, eg: subscribe to sub button, we can do it using this */
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+    /*margin-right: 8px; /*CSS box model - we use margin-right and left*/
+    /*margin-right: 30px;*/
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.1s,/*this transition may take place in hover, but hover it very specific and the transition does do it when hover function activates.*/
+        color 0.1s;
+}
+.join-button:hover{
+    background-color:rgb(42, 42, 204) ;
+    color: white;
+}
+.join-button:active{
+    opacity:0.7;
+}
+.tweet-button{
+    background-color: blue;
+    color:white;
+    border: none;
+    border-radius: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 7px;
+    /*Padding is better alternative for height and weisght, we can add and delete text inside button, eg: subscribe to sub button, we can do it using this */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 17px;
+    padding-right: 17px;
+    transition: box-shadow 0.15s;
+    /*browser tries to align the button based on text. Override this behavior to set the all button into one line*/
+    vertical-align: top;
+}   
+.tweet-button:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+
+/*Shadow - when we click tweet, the shadow will appear under the button*/
+/*rgba - a value eseential means the opacity of the color*/
+/*box-shadow - hori(5px) verti(5px) blur color measured with rgba */
+}
+/*CSS box modelling - Space on inside called padding, outside called margin,
+                    - Getrid of height and width
+                    - Space that elements takes upon the page.  */

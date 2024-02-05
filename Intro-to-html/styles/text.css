@@ -1,0 +1,64 @@
+    /* CSS Specificity- Thats more specific has higher priority: Class name selector (video-stats)> element name selector(p)*/
+   
+    p{
+        /*This is common for all class, so we make it to one which applies to all classes*/
+        font-family: Roboto;
+    }
+    .video-title{
+        /*font-family: Arial; /*the style we want to use for the page*/
+        font-size: 18px;
+        font-weight:bold;
+        /*font-style: italic;- if need ilatic*/
+        width:300px;/*width between the words and sometimes it may extend to another line*/
+       /* text-align:center;/*property to centering the text*/
+        line-height: 18px;
+        /*We are adjusting the margin /border between videotitle and videostats.*/
+        margin-bottom:9px;
+    }
+    .video-stats{
+        /*<p> with default comes with margin at the top and bottom, thats why there is spacing between the videotitle and videostats */
+        /*font-family: Arial;*/
+        font-size: 10px;
+        color: rgb(96,96,96);
+        margin-top:2px;
+    }
+    .video-author{
+        /*font-family: Arial;*/
+        font-size:10px;
+        color:rgb(96,96,96);
+        margin-top:0px;
+    }
+    .video-description{
+        font-size: 10px;
+        color: rgb(96,96,96);
+        margin-top:2px;
+        width: 200px;
+        margin-bottom: 100px;
+    }
+    .apple-text{
+        font-size:10px;
+        margin-bottom: 50px;
+        font-size:14px;
+        background-color: rgb(227,65,64);
+        color: white;
+        text-align:center;
+        padding-top:18px;
+        padding-bottom:18px;
+        /*text element - strong -> It applies to the element where the particular part of the word is bold, rather than all others.
+        it essentially exist inside of the text and modifies the part of the statement
+        <u></u> - this for underline the particular word in the statement
+        <span></span> - Most generic text element, no style, we can create it as a class and it modifies the specific part of the text without modifying anything.
+        why it is improtant to create the class means, if we see the strong and u it default takes the changes to the statement. But, sapn do not change, untill we have to create class and gives the specific characters of that span
+        It is flexible.*/
+        /*text-decoration: underline;*/
+    
+    }
+    .span-example{
+        cursor:pointer;
+        /*margin-left : for reducing many spaces to one.
+        Acheive multiple spaces between the words*/
+        margin-left:1px;
+    }
+    .span-example:hover{
+        text-decoration: underline;
+    }

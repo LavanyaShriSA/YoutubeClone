@@ -1,0 +1,55 @@
+<!-- Flexbox - Other way to create layouts
+             - It is used to create the topof the page
+            Similar to CSS grid, more flexible-->
+<!-- Layout is more rigid for grid, -->
+<!-- Inorder to use the flexible layout, flexbox is used rather grid -->
+<!DOCTYPE html>
+            <html>
+                <head>
+                    <title> FlexBoxPractice</title>
+                </head>
+                <body>
+                <div style="
+                    margin-top: 10px;
+                    display:flex;
+                    flex-direction:row;
+                    ">
+                    <!-- The below code behaves like inline block element rather than blockelement -->
+                    <div style="background-color: lightblue;">div1</div>
+                    <div style="background-color: lightpink;">div2</div>
+                </div>
+                <div style="
+                    display:flex;
+                    flex-direction:row;
+                    
+                    ">
+                    <!-- The below code behaves like inline block element rather than blockelement -->
+                    <div style="background-color: lightblue;">div1</div>
+                    <div style="background-color: lightpink;
+                    flex:1;
+                    ">flex1</div>
+                </div>
+
+                <div style="
+                    margin-top: 10px;
+                    display:flex;
+                    flex-direction:row;
+                    ">
+                    <!-- The below code behaves like inline block element rather than blockelement -->
+                    <div style="background-color: lightblue;">div1</div>
+                    <div style="background-color: lightpink;">div2</div>
+                </div>
+                <div style="
+                    display:flex;
+                    flex-direction:row;
+                    
+                    ">
+                    <!-- The below code behaves like inline block element rather than blockelement -->
+                    <div style="background-color: lightblue;
+                    flex:2">flex2</div>
+                    <div style="background-color: lightpink;
+                    flex:1;
+                    ">flex1</div>
+                </div>
+                </body>
+            </html>

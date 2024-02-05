@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GridPractice</title>
+    </head>
+    <!-- this padding-bottom is used to create spaces between fr1 and fr2 -->
+    <body style="padding-bottom: 1000px;">
+        <div style="
+            display:grid;
+            grid-template-columns: 100px 100px;
+            ">
+            <!-- Three improtant things to be noticed for grid:
+            1. No more charge for the below lines of code. It does not take the full part of the code(blue,red fully)
+            2. It does not take any space between div1 and div2
+            3. Add any element to 2nd div, the 2nd div is taller than the 1st div, it takes collapse
+        
+            Grid maintain alignment much better  -->
+            <!-- 3rd way of writing style formatfile -->
+            <div style="background-color:lightblue">div1</div>
+            <div style="background-color:red;">div2</div>
+        </div>
+        <div style="
+            margin-top: 30px;
+            display:grid;
+            grid-template-columns: 100px 100px 200px;
+            ">
+            <!-- Three improtant things to be noticed for grid:
+            1. No more charge for the below lines of code. It does not take the full part of the code(blue,red fully)
+            2. It does not take any space between div1 and div2
+            3. Add any element to 2nd div, the 2nd div is taller than the 1st div, it takes collapse
+        
+            Grid maintain alignment much better  -->
+            <!-- 3rd way of writing style formatfile -->
+            <div style="background-color:lightblue">div1</div>
+            <div style="background-color:red;">div2</div>
+            <div style="background-color: lightblue;">div3</div>
+        </div>
+        <div style="
+        margin-top: 30px;
+        display:grid;
+        grid-template-columns: 100px 1fr ;
+        
+        ">
+        <!-- fr - free space(1fr) -->
+        <!-- Three improtant things to be noticed for grid:
+        1. No more charge for the below lines of code. It does not take the full part of the code(blue,red fully)
+        2. It does not take any space between div1 and div2
+        3. Add any element to 2nd div, the 2nd div is taller than the 1st div, it takes collapse
+    
+        Grid maintain alignment much better  -->
+        <!-- 3rd way of writing style formatfile -->
+        <div style="background-color:lightblue">div1</div>
+        <div style="background-color:red;">1fr</div>
+        
+    </div>
+    <!-- Gap between the columns we use column-gap -->
+    <div style="
+        margin-top: 30px;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap:20px;
+        row-gap: 40px;
+
+        ">
+        <!-- fr - free space(1fr) -->
+        <!-- Three improtant things to be noticed for grid:
+        1. No more charge for the below lines of code. It does not take the full part of the code(blue,red fully)
+        2. It does not take any space between div1 and div2
+        3. Add any element to 2nd div, the 2nd div is taller than the 1st div, it takes collapse
+    
+        Grid maintain alignment much better  -->
+        <!-- 3rd way of writing style formatfile -->
+        <div style="background-color:lightblue;height:200px">1fr</div>
+        <div style="background-color:red;height:200px">1fr</div>
+        <div style="background-color:lightblue;height:200px">1fr</div>
+        <div style="background-color:red;height:200px">1fr</div>
+        <div style="background-color:lightblue;height:200px">1fr</div>
+        <div style="background-color:red;height:200px">1fr</div>
+        
+    </body>
+</html>
